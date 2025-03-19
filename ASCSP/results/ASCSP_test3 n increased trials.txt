@@ -1,0 +1,16 @@
+source trials for each class:
+a: 80
+l: 112
+v: 42
+w: 26
+y: 10
+
+all target trials for each class:
+80      112     42      26      10
+
+added target trials for each class:
+0	107	25	28	7
+65	0	35	20	7
+62	79	0	29	4
+40	92	40	0	5
+44	77	31	20	0

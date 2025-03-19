@@ -1,0 +1,15 @@
+weightings1 = weightings-0.5+0.5*eye(size(weightings,2));
+% weightings1 = weightings1./sum(abs(weightings1), 1);
+h = heatmap(weightings1);
+h.XLabel = "testing subjects";
+h.YLabel = "training subjects";
+caxis([-max(weightings1,[],"all"), max(weightings1,[],"all")]);
+m = 50;
+m1 = m*0.5;
+r = (0:m1-1)'/max(m1-1,1);
+g = r;
+r = [r; ones(m1,1)];
+g = [g; flipud(g)];
+b = flipud(r);
+map = [r g b];
+h.Colormap = map;
